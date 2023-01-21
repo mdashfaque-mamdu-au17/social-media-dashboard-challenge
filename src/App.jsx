@@ -1,11 +1,14 @@
-import { useState } from 'react';
-import Toggle from './components/Toggle';
+import React from 'react';
+import classNames from 'classnames';
+import { useGlobalContext } from './store/context';
+import Navbar from './sections/Navbar';
 
 function App() {
+  const { theme } = useGlobalContext();
   return (
-    <div>
-      <Toggle />
-    </div>
+    <main>
+      <Navbar />
+    </main>
   );
 }
 
