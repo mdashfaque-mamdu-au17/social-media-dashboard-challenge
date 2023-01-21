@@ -1,9 +1,10 @@
 import { useState } from 'react';
+import Toggle from './components/Toggle';
 
 function App() {
   return (
     <div>
-      <h1 className="">Hello worly</h1>
+      <Toggle />
     </div>
   );
 }

@@ -56,3 +56,12 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+input:checked ~ .dot {
+  transform: translateX(24px);
+  background-color: #f1f3fa;
+}
+
+.bg-dark {
+  background: linear-gradient(225deg, #40db82 0%, #388fe7 98.02%);
+}
