@@ -4,7 +4,7 @@ import { useGlobalContext } from '../store/context';
 
 const Toggle = () => {
   const { theme, changeTheme } = useGlobalContext();
-  console.log(theme);
+
   return (
     <div className="flex items-center justify-center w-full">
       <label htmlFor="toggle" className="flex items-center cursor-pointer">
