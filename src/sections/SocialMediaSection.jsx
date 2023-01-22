@@ -1,13 +1,21 @@
 import React from 'react';
+import classNames from 'classnames';
 import SocialMediaCard from '../components/Card/SocialMediaCard';
 import Facebook from '../assets/icon-facebook.svg';
 import Twitter from '../assets/icon-twitter.svg';
 import Instagram from '../assets/icon-instagram.svg';
 import YouTube from '../assets/icon-youtube.svg';
+import { useGlobalContext } from '../store/context';
 
 const SocialMediaSection = () => {
+  const { theme } = useGlobalContext();
   return (
-    <section className="relative">
+    <section
+      className={classNames(
+        'relative w-full pb-[938px]',
+        theme ? 'bg-white' : 'bg-dark-800'
+      )}
+    >
       <div className="mx-auto px-6 flex flex-col gap-6 absolute -top-11 left-1/2 transform -translate-x-1/2">
         <SocialMediaCard
           iconImage={Facebook}
@@ -30,7 +38,7 @@ const SocialMediaSection = () => {
         />
 
         <SocialMediaCard
-          iconImage={Twitter}
+          iconImage={Instagram}
           name="@realnathanf"
           count="11K"
           countType="followers"
