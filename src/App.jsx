@@ -7,7 +7,7 @@ import SocialMediaSection from './sections/SocialMediaSection';
 function App() {
   const { theme } = useGlobalContext();
   return (
-    <main>
+    <main className={classNames(theme ? 'bg-white' : 'bg-dark-800')}>
       <Navbar />
       <SocialMediaSection />
     </main>
