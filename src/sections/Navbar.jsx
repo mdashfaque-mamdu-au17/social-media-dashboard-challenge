@@ -7,7 +7,12 @@ import { useGlobalContext } from '../store/context';
 const Navbar = () => {
   const { theme } = useGlobalContext();
   return (
-    <nav className={classNames(theme ? 'bg-cream-white-800' : 'bg-dark-900')}>
+    <nav
+      className={classNames(
+        theme ? 'bg-cream-white-800' : 'bg-dark-900',
+        'rounded-b-[20px]'
+      )}
+    >
       <div className="max-w-[1110px] mx-auto lg:flex lg:justify-between lg:items-start lg:pt-9 lg:pb-[154px] lg:px-6 xl:px-0">
         <div className="pt-9 px-6 lg:pt-0 lg:px-0">
           <div>
