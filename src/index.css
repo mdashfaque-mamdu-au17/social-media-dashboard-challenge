@@ -65,3 +65,16 @@ input:checked ~ .dot {
 .bg-dark {
   background: linear-gradient(225deg, #40db82 0%, #388fe7 98.02%);
 }
+
+.pink-border {
+  border-top-width: 4px !important;
+  border-radius: 5px !important;
+  border-style: solid;
+  border-image: linear-gradient(
+      225deg,
+      #df4896 0%,
+      #ee877e 50.91%,
+      #fdc366 100%
+    )
+    border-box;
+}
