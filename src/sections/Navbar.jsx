@@ -7,13 +7,8 @@ import { useGlobalContext } from '../store/context';
 const Navbar = () => {
   const { theme } = useGlobalContext();
   return (
-    <nav
-      className={classNames(
-        theme ? 'bg-cream-white-800' : 'bg-dark-900',
-        'rounded-b-[20px]'
-      )}
-    >
-      <div className="max-w-[1110px] mx-auto lg:flex lg:justify-between lg:items-start lg:pt-9 lg:pb-[154px] lg:px-6 xl:px-0">
+    <nav className={classNames(theme ? 'bg-cream-white-800' : 'bg-dark-900')}>
+      <div className="max-w-[1110px] mx-auto lg:flex lg:justify-between lg:items-start lg:pt-9 lg:pb-[46px] lg:px-6 xl:px-0">
         <div className="pt-9 px-6 lg:pt-0 lg:px-0">
           <div>
             <Title type="primary">Social Media Dashboard</Title>
@@ -29,7 +24,7 @@ const Navbar = () => {
             )}
           ></div>
         </div>
-        <div className="flex justify-between items-center px-6 pt-4 pb-[84px] lg:justify-start lg:gap-[13px] lg:pb-0 lg:px-0 lg:pt-[13px]">
+        <div className="flex justify-between items-center px-6 pt-4 pb-10 lg:justify-start lg:gap-[13px] lg:pb-0 lg:px-0 lg:pt-[13px]">
           <div>
             <p
               className={classNames(
