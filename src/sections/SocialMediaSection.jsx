@@ -12,11 +12,19 @@ const SocialMediaSection = () => {
   return (
     <section
       className={classNames(
-        'relative w-full pb-[938px]',
+        'relative w-full',
         theme ? 'bg-white' : 'bg-dark-800'
       )}
     >
-      <div className="mx-auto px-6 flex flex-col gap-6 absolute -top-11 left-1/2 transform -translate-x-1/2">
+      <div
+        className={classNames(
+          'w-full h-11 rounded-b-[20px] absolute top-0 left-0 lg:h-[108px]',
+          theme
+            ? 'bg-cream-white-800 border-bg-cream-white'
+            : 'bg-dark-900 border-dark-900'
+        )}
+      ></div>
+      <div className="max-w-[1100px] mx-auto grid grid-cols-1 gap-y-6 place-items-center md:grid-cols-2 md:gap-x-6 md:place-content-center lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-[30px]">
         <SocialMediaCard
           iconImage={Facebook}
           name="@nathanf"
