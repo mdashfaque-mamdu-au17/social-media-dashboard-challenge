@@ -19,7 +19,7 @@ const SocialMediaCard = (props) => {
   return (
     <div
       className={classNames(
-        'pb-6 relative rounded-[5px] border-t-4  text-center w-[326px] h-[216px] hover:cursor-pointer transition-colors duration-500 ease-linear',
+        'pb-6 relative rounded-[5px] border-t-4  text-center w-[326px] h-[216px] hover:cursor-pointer transition-colors duration-500 ease-linear xl:w-[255px]',
         theme
           ? 'bg-cream-white-700 hover:bg-cream-white-600 '
           : 'bg-dark-600 hover:bg-dark-700',
